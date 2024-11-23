@@ -6,13 +6,14 @@ import boto3
 from PIL  import Image
 from botocore.exceptions import ClientError
 
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
+
 class ImageError(Exception):
     "Custom exception for errors returned by SDXL"
     def __init__(self, message):
         self.message = message
 
-logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
 
 
 def generate_image(model_id, body):

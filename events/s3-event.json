@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "image-processing-bucket-local"
+        },
+        "object": {
+          "key": "input/test-image.jpg"
+        }
+      }
+    }
+  ]
+} 
